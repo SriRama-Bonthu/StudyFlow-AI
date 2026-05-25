@@ -1,0 +1,223 @@
+.dashboard-container{
+
+  padding:2rem;
+
+  color:white;
+}
+
+/* HERO */
+
+.dashboard-hero{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  margin-bottom:2.5rem;
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(124,58,237,0.18),
+    rgba(0,212,255,0.08)
+  );
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  padding:2rem;
+
+  border-radius:28px;
+}
+
+.dashboard-hero h1{
+
+  font-size:2.5rem;
+
+  margin-bottom:0.8rem;
+}
+
+.dashboard-hero p{
+
+  color:#bdbdbd;
+
+  max-width:600px;
+
+  line-height:1.7;
+}
+
+/* GRID */
+
+.dashboard-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
+
+  gap:1.5rem;
+
+  margin-bottom:2.5rem;
+}
+
+.dashboard-card{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  border-radius:24px;
+
+  padding:2rem;
+
+  transition:0.3s;
+}
+
+.dashboard-card:hover{
+
+  transform:translateY(-6px);
+
+  border-color:#7C3AED;
+}
+
+.dashboard-icon{
+
+  font-size:2rem;
+
+  color:#7C3AED;
+
+  margin-bottom:1rem;
+}
+
+.dashboard-card h2{
+
+  font-size:2rem;
+
+  margin-bottom:0.5rem;
+}
+
+.dashboard-card p{
+
+  color:#bdbdbd;
+}
+
+/* QUICK ACTIONS */
+
+.quick-actions{
+
+  margin-bottom:2.5rem;
+}
+
+.quick-actions h2{
+
+  margin-bottom:1.5rem;
+}
+
+.actions-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
+
+  gap:1.5rem;
+}
+
+.action-card{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  border-radius:20px;
+
+  padding:1.5rem;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:1rem;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.action-card:hover{
+
+  transform:translateY(-4px);
+
+  border-color:#00d4ff;
+}
+
+/* RECENT */
+
+.recent-section h2{
+
+  margin-bottom:1.5rem;
+}
+
+.recent-card{
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  border-radius:20px;
+
+  padding:1.5rem;
+
+  margin-bottom:1rem;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+}
+
+.recent-card p{
+
+  color:white;
+}
+
+.recent-card span{
+
+  color:#9ca3af;
+
+  font-size:0.9rem;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .dashboard-container{
+
+    padding:1rem;
+  }
+
+  .dashboard-hero{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:1.5rem;
+  }
+
+  .dashboard-hero h1{
+
+    font-size:2rem;
+  }
+
+}

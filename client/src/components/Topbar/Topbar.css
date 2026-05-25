@@ -1,0 +1,35 @@
+.topbar{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  margin-bottom:2rem;
+}
+
+.topbar p{
+
+  color:var(--text-secondary);
+
+  margin-top:0.5rem;
+}
+
+.topbar-search input{
+
+  padding:
+  0.9rem
+  1rem;
+
+  border:none;
+
+  border-radius:14px;
+
+  background:
+  rgba(255,255,255,0.05);
+
+  color:white;
+
+  outline:none;
+}
