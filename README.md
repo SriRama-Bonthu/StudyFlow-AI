@@ -46,13 +46,6 @@ The project integrates OpenRouter API for Large Language Model (LLM) based AI fu
 
 ---
 
-## 📊 Productivity Dashboard
-- Modern responsive dashboard UI
-- Displays study-related analytics and productivity cards
-- Quick navigation to AI tools and learning features
-
----
-
 ## 🤖 AI Tools Hub
 Integrated collection of useful AI platforms including:
 - ChatGPT
