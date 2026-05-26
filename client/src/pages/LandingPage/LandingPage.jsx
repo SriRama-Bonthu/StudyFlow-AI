@@ -1,4 +1,5 @@
 import Navbar from "../../components/navbar/Navbar";
+import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
 function LandingPage() {
@@ -23,15 +24,16 @@ function LandingPage() {
     </p>
 
     <div className="hero-buttons">
-
+    <Link to="/signup">
       <button className="primary-btn">
         Get Started
       </button>
-
+</Link>
+<Link to="/features-grid">
       <button className="secondary-btn">
         Explore Features
       </button>
-
+</Link>
     </div>
 
   </div>
