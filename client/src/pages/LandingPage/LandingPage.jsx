@@ -29,11 +29,13 @@ function LandingPage() {
         Get Started
       </button>
 </Link>
-<Link to="/features-grid">
-      <button className="secondary-btn">
-        Explore Features
-      </button>
-</Link>
+<button className="secondary-btn"
+  onClick={() =>
+    document.getElementById("features").scrollIntoView()
+  }
+>
+  Explore Features
+</button>
     </div>
 
   </div>
@@ -69,28 +71,28 @@ function LandingPage() {
   <div className="section-header">
 
     <h2>
-      Powerful Features Built for Students
+      Powerful AI Features For Students
     </h2>
 
     <p>
-      Everything you need to study smarter,
-      stay productive, and learn efficiently.
+      Smart tools designed to improve learning,
+      productivity, and revision efficiency.
     </p>
 
   </div>
 
-  <div className="features-grid">
+  <div id="features" className="features-grid">
 
     <div className="feature-card glass-card">
 
       <div className="feature-icon">
-        🤖
+        📄
       </div>
 
-      <h3>AI Summaries</h3>
+      <h3>PDF Summarizer</h3>
 
       <p>
-        Generate quick revision notes from long chapters instantly.
+        Upload study PDFs and instantly generate AI-powered summaries.
       </p>
 
     </div>
@@ -98,41 +100,13 @@ function LandingPage() {
     <div className="feature-card glass-card">
 
       <div className="feature-icon">
-        📚
+        💬
       </div>
 
-      <h3>Smart PDF Learning</h3>
+      <h3>Chat With PDF</h3>
 
       <p>
-        Upload PDFs and interact with AI for explanations and quizzes.
-      </p>
-
-    </div>
-
-    <div className="feature-card glass-card">
-
-      <div className="feature-icon">
-        ⏳
-      </div>
-
-      <h3>Focus Rooms</h3>
-
-      <p>
-        Study with realtime Pomodoro rooms and productivity tracking.
-      </p>
-
-    </div>
-
-    <div className="feature-card glass-card">
-
-      <div className="feature-icon">
-        📈
-      </div>
-
-      <h3>Analytics Dashboard</h3>
-
-      <p>
-        Visualize study consistency, focus score, and learning trends.
+        Ask questions directly from uploaded PDFs and get instant answers.
       </p>
 
     </div>
@@ -143,10 +117,10 @@ function LandingPage() {
         🧠
       </div>
 
-      <h3>Smart Revision</h3>
+      <h3>AI Quiz Generator</h3>
 
       <p>
-        AI predicts topics you may forget and schedules revision.
+        Generate smart quizzes automatically from study materials.
       </p>
 
     </div>
@@ -154,13 +128,41 @@ function LandingPage() {
     <div className="feature-card glass-card">
 
       <div className="feature-icon">
-        🌍
+        📊
       </div>
 
-      <h3>Student Community</h3>
+      <h3>Study Dashboard</h3>
 
       <p>
-        Collaborate, discuss doubts, and learn together with peers.
+        Track productivity, focus score, and learning progress visually.
+      </p>
+
+    </div>
+
+    <div className="feature-card glass-card">
+
+      <div className="feature-icon">
+        🤖
+      </div>
+
+      <h3>AI Tools Hub</h3>
+
+      <p>
+        Access ChatGPT, Gemini, Claude, Perplexity, Canva, and more.
+      </p>
+
+    </div>
+
+    <div className="feature-card glass-card">
+
+      <div className="feature-icon">
+        📝
+      </div>
+
+      <h3>Smart Notes</h3>
+
+      <p>
+        Organize study notes and manage learning resources efficiently.
       </p>
 
     </div>
@@ -168,7 +170,6 @@ function LandingPage() {
   </div>
 
 </section>
-
 <section className="dashboard-preview">
 
   <div className="dashboard-left">
