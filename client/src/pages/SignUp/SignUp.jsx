@@ -1,4 +1,4 @@
-import "./Signup.css";
+import "./SignUp.css";
 
 import {
   Link,
