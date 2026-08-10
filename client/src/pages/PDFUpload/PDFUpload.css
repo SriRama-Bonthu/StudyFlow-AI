@@ -1,262 +1,162 @@
 .pdf-container {
-
-  width:100%;
-
-  min-height:100vh;
-
-  /* padding:1rem 1rem 1rem; */
-
-  color:white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-
-/* HERO */
-.upload-icon {
-  font-size: 4rem;
-
-  color: #a855f7;
-
-  margin-bottom: 1.5rem;
-}
-
-
-.custom-upload-btn {
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  padding: 1rem 2rem;
-
-  border-radius: 16px;
-
-  background: linear-gradient(90deg, #7c3aed, #a855f7);
-
-  color: white;
-
-  font-weight: 600;
-
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-.custom-upload-btn:hover {
-  transform: translateY(-3px);
-
-  box-shadow: 0 0 25px rgba(168, 85, 247, 0.5);
-}
-
-.file-name {
-  display: block;
-
-  margin-top: 1.5rem;
-
-  color: #d1d5db;
-
-  font-size: 0.95rem;
-}
-.pdf-header {
-
-  max-width:900px;
-
-  margin:3rem auto 4rem;
- align-items:center;
-  text-align:center;
-}
-
-.pdf-header h1 {
-  font-size: 4rem;
-
-  font-weight: 700;
-
-  margin-bottom: 1rem;
-
-  background: linear-gradient(90deg, #ffffff, #a855f7, #00d4ff);
-
-  -webkit-background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-}
-
-/* .pdf-header p {
-  color: #bdbdbd;
-
-  font-size: 1.1rem;
-  text-align: center;
-  align-items: center;
-  max-width: 700px;
- align-self: center;
-  line-height: 1.8;
-} */
-.upload-area{
-
-  max-width:850px;
-
-  margin:0 auto;
-}
-
-/* UPLOAD CARD */
 
 .upload-card {
   width: 100%;
-
-  max-width: 850px;
-
-  background: rgba(255, 255, 255, 0.04);
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-
-  backdrop-filter: blur(18px);
-
-  border-radius: 32px;
-
-  padding: 3rem;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  gap: 2rem;
-
-  box-shadow: 0 0 60px rgba(124, 58, 237, 0.12);
-
-  transition: 0.3s;
+  padding: 2.5rem 1.5rem;
+  border-radius: 28px;
 }
-
-.upload-card:hover {
-  transform: translateY(-6px);
-
-  border-color: #7c3aed;
-}
-
-/* DRAG AREA */
 
 .upload-area {
-  width: 100%;
-
-  border: 2px dashed rgba(255, 255, 255, 0.15);
-
+  max-width: 650px;
+  margin: 0 auto;
+  border: 2px dashed var(--glass-border);
   border-radius: 24px;
-
-  padding: 4rem 2rem;
-
+  padding: 3rem 1.5rem;
   text-align: center;
-
-  background: rgba(255, 255, 255, 0.03);
-
-  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: var(--transition);
 }
 
 .upload-area:hover {
-  border-color: #a855f7;
+  border-color: var(--primary-light);
+  background: rgba(124, 58, 237, 0.05);
+}
 
-  background: rgba(168, 85, 247, 0.05);
+.upload-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  font-size: 2.2rem;
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
 }
 
 .upload-area h2 {
-  font-size: 1.5rem;
-
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .upload-area p {
-  color: #9ca3af;
-
-  margin-bottom: 1.5rem;
-}
-
-.upload-area input {
-  color: white;
-}
-
-/* BUTTON */
-
-.primary-btn {
-  width: 100%;
-  margin-top: 10px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
   max-width: 400px;
+}
 
-  padding: 1rem;
-
-  border: none;
-
-  border-radius: 18px;
-
-  background: linear-gradient(90deg, #7c3aed, #a855f7);
-
-  color: white;
-
-  font-size: 1rem;
-
+.custom-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-color);
+  color: #ffffff;
+  font-size: 0.9rem;
   font-weight: 600;
-
   cursor: pointer;
-
-  transition: 0.3s;
+  transition: var(--transition);
 }
 
-.primary-btn:hover {
-  transform: translateY(-3px);
-
-  box-shadow: 0 0 25px rgba(168, 85, 247, 0.5);
+.custom-upload-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
 }
 
-/* SUMMARY */
+.selected-file-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #34d399;
+  font-size: 0.85rem;
+  max-width: 100%;
+}
+
+.file-check-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.file-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.summarize-btn {
+  width: 100%;
+  max-width: 320px;
+  margin-top: 0.5rem;
+}
 
 .summary-card {
-
-  width:100%;
-
-  max-width:850px;
-
-  margin:3rem auto 0;
-
-  background: rgba(255, 255, 255, 0.04);
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-
-  border-radius: 32px;
-
-  padding: 3rem;
-
-  backdrop-filter: blur(18px);
-
-  box-shadow: 0 0 60px rgba(0, 212, 255, 0.08);
+  padding: 2rem;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
-.summary-card h2 {
-  font-size: 2rem;
-
-  margin-bottom: 1.5rem;
+.summary-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--glass-border);
 }
 
-.summary-card p {
-  color: #d1d5db;
+.summary-header-icon {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
 
-  line-height: 2;
+.summary-card-header h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
 
+.summary-content {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.8;
   white-space: pre-wrap;
 }
 
-/* MOBILE */
+.placeholder-text {
+  color: var(--text-muted);
+}
 
 @media (max-width: 768px) {
-  .pdf-container {
-    padding: 2rem 1rem;
-  }
-
-  .pdf-header h1 {
-    font-size: 2.5rem;
-  }
-
   .upload-card {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .upload-area {
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .summary-card {
+    padding: 1.5rem 1.25rem;
   }
 }

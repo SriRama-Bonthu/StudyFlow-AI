@@ -1,20 +1,43 @@
 :root {
-
+  /* Brand Color Palette */
   --primary: #7C3AED;
+  --primary-hover: #6D28D9;
+  --primary-light: #A78BFA;
   --secondary: #A855F7;
   --accent: #22D3EE;
+  --accent-glow: rgba(34, 211, 238, 0.25);
+  
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
 
-  --bg-dark: #0B1120;
-  --card-bg: #111827;
+  /* Background Palette */
+  --bg-dark: #090D16;
+  --bg-dark-alt: #0F172A;
+  --card-bg: rgba(17, 24, 39, 0.7);
+  --card-bg-hover: rgba(30, 41, 59, 0.8);
+  
+  /* Glassmorphism Tokens */
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-bg-hover: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-active: rgba(124, 58, 237, 0.4);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
-  --text-primary: #F9FAFB;
+  /* Typography */
+  --text-primary: #F8FAFC;
   --text-secondary: #94A3B8;
+  --text-muted: #64748B;
 
-  --border-color: rgba(255,255,255,0.08);
+  /* Borders & Shadows */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-color-hover: rgba(168, 85, 247, 0.3);
+  --shadow-primary: 0 0 25px rgba(124, 58, 237, 0.35);
+  --shadow-glow: 0 0 30px rgba(168, 85, 247, 0.2);
 
-  --transition: all 0.3s ease;
-
-  --shadow-primary:
-  0 0 20px rgba(124,58,237,0.35);
-
+  /* Layout & Transitions */
+  --sidebar-width: 260px;
+  --navbar-height: 72px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }

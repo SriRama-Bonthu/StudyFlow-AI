@@ -1,34 +1,44 @@
 import "./Topbar.css";
+import { FiMenu, FiZap } from "react-icons/fi";
 
-function Topbar() {
+function Topbar({ title = "Dashboard", subtitle = "Welcome back to StudyFlow AI" }) {
+  const toggleMobileSidebar = () => {
+    window.dispatchEvent(new Event("toggle-sidebar"));
+  };
+
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
 
   return (
+    <header className="topbar">
+      <div className="topbar-left">
+        <button 
+          className="mobile-toggle-btn" 
+          onClick={toggleMobileSidebar} 
+          aria-label="Toggle navigation menu"
+        >
+          <FiMenu />
+        </button>
 
-    <div className="topbar">
-
-      <div>
-
-        <h2>
-          Dashboard
-        </h2>
-
-        <p>
-          Welcome back to StudyFlow AI
-        </p>
-
+        <div>
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
+        </div>
       </div>
 
-      <div className="topbar-search">
+      <div className="topbar-right">
+        <div className="status-badge">
+          <span className="status-dot"></span>
+          <FiZap className="sparkle-icon" />
+          <span>AI Active</span>
+        </div>
 
-        <input
-          type="text"
-          placeholder="Search..."
-        />
-
+        <div className="topbar-user-badge">
+          <div className="topbar-avatar">
+            {user?.name ? user.name.charAt(0).toUpperCase() : "U"}
+          </div>
+        </div>
       </div>
-
-    </div>
-
+    </header>
   );
 }
 
